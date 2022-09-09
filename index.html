@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fellah Hayet's Portfolio</title>
+  </head>
+
+  <body>
+    <header class="flex-container">
+      <a href="#" id="logo-placeholder">Welcome</a>
+
+      <nav>
+        <button id="burger-menu" type="button">
+          <img src="images/burger-menu.png" alt="menu" data-toggled="false" />
+        </button>
+
+        <ul id="nav_list" class="flex-container hidden nav_list">
+          <li>
+            <a href="#projects">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about-me">About</a>
+          </li>
+          <li>
+            <a href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="headline" class="flex-container headline">
+      <h1>
+        Hey there. I’m Hayet <br />
+        <span class="green">I’m a software developer</span>
+      </h1>
+      <p>
+        I can help you build a product, feature or website Look through some of
+        my work and experience! If you like what you see and have a project you
+        need coded, don’t hesitiate to contact me.
+      </p>
+
+      <ul class="flex-container social-media">
+        <li>
+          <a href="https://twitter.com/hayet_fe">
+            <img
+              src="images/twitter.png"
+              alt="see twitter profile"
+              class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/hayet-f-5b4347247/"
+            ><img
+              src="images/linkedin.png"
+              alt="see linkedin profile"
+              class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/medium.png" alt="see medium profile" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/laiifuu"
+            ><img src="images/github.png" alt="see github profile" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="images/angellist.png"
+              alt="see angellist profile"
+              class="icon"
+          /></a>
+        </li>
+      </ul>
+
+      <button id="next" type="submit"></button>
+    </section>
+
+    <section id="projects" class="grid-container projects"></section>
+
+    <section id="about-me" class="about-me">
+      <h1>About me</h1>
+      <p>
+        I can help you build a product , feature or website Look through some of
+        my work and experience! If you like what you see and have a project you
+        need coded, don’t hestiate to contact me.
+      </p>
+      <button class="call-to-action" type="submit">Get My Resume</button>
+    </section>
+
+    <section id="skills" class="flex-container skills">
+      <div class="skills-card">
+        <img src="images/icon-languages.png" alt="" class="skills-icon" />
+        <h2>Languages</h2>
+        <ul class="flex-container categories">
+          <li class="category">JavaScript</li>
+          <li class="category">Ruby</li>
+          <li class="category">Html</li>
+          <li class="category">Css</li>
+        </ul>
+      </div>
+
+      <div class="skills-card">
+        <img src="images/icon-frameworks.png" alt="" class="skills-icon" />
+        <h2>Frameworks</h2>
+        <ul class="flex-container categories">
+          <li class="category">Bootstrap</li>
+          <li class="category">Ruby on rails</li>
+          <li class="category">RSpec</li>
+          <li class="category">Capybara</li>
+          <li class="category">Selenium</li>
+        </ul>
+      </div>
+
+      <div class="skills-card">
+        <img src="images/icon-skills.png" alt="" class="skills-icon" />
+        <h2>Skills</h2>
+        <ul class="flex-container categories">
+          <li class="category">Codekit</li>
+          <li class="category">Github</li>
+          <li class="category">Codepen</li>
+          <li class="category">Gitlab</li>
+          <li class="category">Terminal</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact-section" class="flex-container contact-section">
+      <p>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </p>
+
+      <form action="https://formspree.io/f/xeqdoera" method="POST">
+        <input
+          aria-label="Full Name"
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="Full name*"
+          maxlength="30"
+          required
+        />
+
+        <input
+          aria-label="Email"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email address*"
+          required
+        />
+
+        <textarea
+          aria-label="Message"
+          name="message"
+          id="massage"
+          maxlength="500"
+          placeholder="Enter text here*"
+          required
+        ></textarea>
+        <div>
+          <button class="call-to-action" type="submit">Get in touch</button>
+          <span class="error"></span>
+        </div>
+      </form>
+    </section>
+
+    <footer class="flex-container">
+      <ul class="flex-container social-media">
+        <li>
+          <a href="https://twitter.com/hayet_fe">
+            <img
+              src="images/twitter.png"
+              alt="see twitter profile"
+              class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/hayet-f-5b4347247/"
+            ><img
+              src="images/linkedin.png"
+              alt="see linkedin profile"
+              class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/medium.png" alt="see medium profile" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/laiifuu"
+            ><img src="images/github.png" alt="see github profile" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="images/angellist.png"
+              alt="see angellist profile"
+              class="icon"
+          /></a>
+        </li>
+      </ul>
+
+      <p>hayet.fellah145@gmail.com</p>
+    </footer>
+    <div class="end-page"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
