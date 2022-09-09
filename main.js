@@ -1,6 +1,6 @@
 const button = document.getElementById('burger-menu');
 const menu = document.querySelector('#nav_list');
-const menuLinks = [...menu.children];
+const menuLinks = [..menu.children];
 const img = button.querySelector('img');
 const body = document.querySelector('body');
 
@@ -95,7 +95,7 @@ function createProjectsList(info, n) {
   const projectsList = [];
   for (let i = 0; i < n; i += 1) {
     projectsList.push(
-      new Project(i, info[0], info[1], info[2], info[3], info[4]),
+      new Project(i, info[0], info[1], info[2], info[3], info[4], info[5]),
     );
   }
   return projectsList;
@@ -194,7 +194,7 @@ function createPopup(obj) {
   b1.classList.add('flex-container');
   b1.classList.add('popup-button');
 
-  const b2 = document.createElement('button');
+  b2 = document.createElement('button');
   b2.append(document.createTextNode('See source'));
   const srcImg = document.createElement('img');
   srcImg.src = 'images/github-white.svg';
